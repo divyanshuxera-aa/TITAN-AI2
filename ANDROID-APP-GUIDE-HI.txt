@@ -1,0 +1,14 @@
+TITAN.AI ko Android APK banane ke liye (mobile se bhi kar sakte ho)
+
+1. Is ZIP ko apne GitHub repository mein upload/replace karo. ZIP ke andar ke files repository ke root mein hone chahiye; TITAN-AI2-main naam ka extra folder repository ke andar mat rehne dena.
+2. GitHub repository kholo -> Settings -> Actions -> General -> Actions permissions mein actions allow hon.
+3. Code tab mein .github/workflows/android-apk.yml file dikhni chahiye.
+4. Actions tab kholo -> "Build TITAN.AI Android APK" workflow select karo -> Run workflow dabao.
+5. Build complete hone par run ke neeche Artifacts mein "titan-ai-debug-apk" download karo.
+6. ZIP extract karke app-debug.apk phone par download karo, phir APK install karo. Android pooche to browser/files app ke liye "Install unknown apps" allow karna pad sakta hai.
+
+Dhyan:
+- Yeh debug APK hai, Play Store ke liye signed release APK nahi.
+- GitHub Actions run fail ho to red failed run kholo aur error ka screenshot bhejo.
+- App ka package ID com.titanai.app aur app name TITAN.AI set hai.
+- Existing website code aur countdown component ko is setup mein jaan-bujhkar change nahi kiya gaya.
